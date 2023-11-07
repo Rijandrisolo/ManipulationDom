@@ -59,3 +59,22 @@ function calculOperation(){
    
    
    }
+   //////////////
+
+   function checkFormulaire(){
+
+    let nom= document.querySelector('#nom').value;
+    let prenom= document.querySelector('#prenom').value;
+    let dateNaissance= document.querySelector('#dateNaissance').value;
+    console.log(nom);
+    
+              
+    if(nom && prenom && dateNaissance){
+    }else{
+       console.log("non");
+       document.querySelector('#resultat').style.backgroundColor = "red";
+       document.querySelector('#resultat').innerHTML="Il faut renseigner les éléments ";
+    }
+   
+   
+   }
