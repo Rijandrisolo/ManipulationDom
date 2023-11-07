@@ -1,17 +1,17 @@
-function calcul(){
+function calculAddition(){
 
- let chiffre1= document.getElementById('chiffre1').value;
- let chiffre2= document.getElementById('chiffre2').value;
+ let chiffre1= document.querySelector('#chiffre1').value;
+ let chiffre2= document.querySelector('#chiffre2').value;
  console.log(chiffre1);
  if(chiffre1 || chiffre2){
         let total = parseInt(chiffre1)+parseInt(chiffre2);
-        document.getElementById('resultat').style.backgroundColor = "";
-        document.getElementById('resultat').innerHTML="Le résultat est "+total;
+        document.querySelector('#resultat').style.backgroundColor = "";
+        document.querySelector('#resultat').innerHTML="Le résultat est "+total;
         
  }else if(chiffre1== 0|| chiffre2 ==0){
     console.log("non");
-    document.getElementById('resultat').style.backgroundColor = "red";
-    document.getElementById('resultat').innerHTML="Saisir des chiffres ";
+    document.querySelector('#resultat').style.backgroundColor = "red";
+    document.querySelector('#resultat').innerHTML="Saisir des chiffres ";
  }
 
 
@@ -19,11 +19,11 @@ function calcul(){
 /////////////////////////////////////////////
 
 
-function calcul1(){
+function calculOperation(){
 
-    let chiffre1= document.getElementById('chiffre1').value;
-    let chiffre2= document.getElementById('chiffre2').value;
-    let operateur = document.getElementById('choix').value;
+    let chiffre1= document.querySelector('#chiffre1').value;
+    let chiffre2= document.querySelector('#chiffre2').value;
+    let operateur = document.querySelector('#choix').value;
     let total = 0;
     let word="";
     console.log(typeof(operateur));
@@ -48,13 +48,13 @@ function calcul1(){
                         break;     
             }
           
-           document.getElementById('resultat').style.backgroundColor = "";
-           document.getElementById('resultat').innerHTML=word+total;
+           document.querySelector('resultat').style.backgroundColor = "";
+           document.querySelector('resultat').innerHTML=word+total;
            
     }else if(chiffre1== 0|| chiffre2 ==0){
        console.log("non");
-       document.getElementById('resultat').style.backgroundColor = "red";
-       document.getElementById('resultat').innerHTML="Saisir des chiffres ";
+       document.querySelector('resultat').style.backgroundColor = "red";
+       document.querySelector('resultat').innerHTML="Saisir des chiffres ";
     }
    
    
