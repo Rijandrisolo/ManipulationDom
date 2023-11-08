@@ -1,5 +1,5 @@
     /**
-     * addition
+     * addition sans choix opérateur
      */
 
 function calculAddition(){
