@@ -1,4 +1,7 @@
 function calculAddition(){
+    /**
+     * addition
+     */
 
  let chiffre1= document.querySelector('#chiffre1').value;
  let chiffre2= document.querySelector('#chiffre2').value;
@@ -18,7 +21,7 @@ function calculAddition(){
 }
 /////////////////////////////////////////////
 /**
- * calcul
+ * saisie de chiffres et choix opérateur
  */
 
 function calculOperation(){
@@ -62,6 +65,10 @@ function calculOperation(){
    
    }
    ///////////////////////////
+   /**
+    * Permet de vérifier si un formulaire est vide
+    * 
+    */
 
    function checkFormulaire(){
 
@@ -84,6 +91,10 @@ function calculOperation(){
    ///////////////////////////////
 
    function affichageJson(){
+    /**
+     * 
+     * affichage json
+     */
 
     let data = {"polluant":"CO2", "unite":"milliards de tonnes", "annee":2017, 
     "pays":[
