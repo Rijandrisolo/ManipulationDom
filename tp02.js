@@ -1,7 +1,9 @@
-function calculAddition(){
     /**
      * addition
      */
+
+function calculAddition(){
+   
 
  let chiffre1= document.querySelector('#chiffre1').value;
  let chiffre2= document.querySelector('#chiffre2').value;
@@ -89,12 +91,12 @@ function calculOperation(){
    }
 
    ///////////////////////////////
-
-   function affichageJson(){
     /**
      * 
      * affichage json
      */
+   function affichageJson(){
+    
 
     let data = {"polluant":"CO2", "unite":"milliards de tonnes", "annee":2017, 
     "pays":[
